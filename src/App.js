@@ -48,7 +48,7 @@ function App() {
       <Navbar/>
       <div className="main-container">
         <Routes>
-          <Route path="/" element={<ItemList inventoryArray={inventory}/>}></Route>
+          <Route path="/inventory" element={<ItemList inventoryArray={inventory}/>}></Route>
           <Route path="/add" element={<AddItem onAddNewItem={addInventoryItemClick}/>}></Route>
           <Route path="/edit" element={< EditItem inventoryArray2={inventory} inventorySetter={setInventory} historyArray={history} historySetter={setHistory}/>}></Route>
           <Route path="/history" element={<History historyArray={history}/>}></Route>
